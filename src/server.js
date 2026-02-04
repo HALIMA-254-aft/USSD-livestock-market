@@ -14,6 +14,7 @@ app.post('/ussd', handleUSSD);
 
 // Use the Railway provided port or default 3000
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`USSD server running on port ${PORT}`);
 });
+
